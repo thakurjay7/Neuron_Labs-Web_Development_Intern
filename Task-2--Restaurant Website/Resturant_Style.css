@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Kenia&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kenia', cursive;
+}
+
+/* ===================================== NavBar =========================================== */
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+    font-family: 'Kenia', cursive;
+}
+
+.nav-row li a {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.nav-row li a:hover {
+    text-decoration: underline rgb(244, 150, 0);
+}
+
+
+/* HERO BANNER INTRO */
+.section-intro {
+    height: 820px;
+    background-image: url(Images/banner-img.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 10rem;
+    font-weight: 700;
+    font-family: 'Kenia', cursive;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1.5;
+}
+
+.link-to-book-wrapper a {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border: 5px solid rgb(255, 255, 255);
+    font-family: 'Kenia', cursive;
+}
+
+
+
+/* ================================================ ABOUT ========================================== */
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+
+.about-section h3{
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 60%;
+    font-family: 'Kenia', cursive;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-transform: uppercase; 
+    text-decoration: underline rgb(244, 150, 0);
+}
+.about-section p{
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 60%;
+    font-family: 'Kenia', cursive;
+    font-size: 1.8em;
+}
+
+.carousel-inner {
+    height: 600px;
+}
+
+.carousel-inner img{
+    height: 600px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+
+
+/* ====================================== FOOD MENU ================================== */
+
+.food-menu {
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+.food-menu h2 {
+    color: #ff9933;
+    font-weight: 700;
+    padding-top: 30px;
+    font-family: 'Kenia', cursive;
+}
+  
+.food-menu .section-text {
+    max-width: 44ch;
+    margin-inline: auto;
+    margin-block-end: 30px;
+    margin-top: 20px;
+    font-family: 'Kenia', cursive;
+  }
+  
+.fiter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-block-end: 40px;
+    list-style-type: none;
+    
+  }
+  
+.filter-btn {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid #eee;
+    font-family: 'Kenia', cursive;
+}
+  
+.filter-btn.active {
+    background-color: #ff9933;
+    color: #fff;
+    border: 1px solid #ff9933;
+  }
+  
+.food-menu-list {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Kenia', cursive;
+  }
+  
+.food-menu-list .w-100{
+    width: 15rem;
+    height: 20rem;
+}
+
+.food-menu-card {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.food-menu-btn {
+    position: relative;
+    top: calc(50% + 15px);
+    left: 30%;
+    transform: translate(-50%, 0);
+    min-width: max-content;
+    background-color: #ff3300;
+    color: #fff;
+    width: 60%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.food-menu-btn:hover,
+.food-menu-btn:focus {
+    background-color: #ff9933;
+}
+
+.food-menu-card:hover .food-menu-btn,
+.food-menu-card:focus-within .food-menu-btn {
+    opacity: 1;
+}
+
+.price-wrapper .price{
+    background: #ff9933;
+}
+
+/* ================================= Reservation Section ========================================= */
+
+.reservation {
+    background-color: #ffffff;
+    padding: 50px 0;
+    font-family: 'Kenia', cursive;
+  }
+  
+.reservation-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.form {
+    display: flex;
+    background: #cccccc22;
+    background-repeat: repeat;
+    background-position: top left;
+
+  }
+  
+.form-left,
+.form-right {
+    padding: 40px 20px 30px;
+  }
+  
+.form-left {
+    flex: 1;
+  }
+  
+.form-left h2{
+    color: #ff9933;
+    font-weight: 700;
+  }
+
+  .form-left p{
+    color: #ff9933;
+    font-weight: 600;
+  }
+
+.form-right {
+    flex: 1;
+    background-image: url('./images/form-pattern.png');
+    background-repeat: repeat;
+    background-position: top left;
+  }
+
+  .form-right h2{
+    color: #000000;
+    font-weight: 800;
+  }
+
+  .form-right p{
+    color: #000000;
+    font-weight: 700;
+  }
+  
+.headline {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+.form-text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+.form-text a{
+    color: #000;
+}  
+  
+.link {
+    color: #ff9933;
+  }
+  
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+.input-field {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ff9933;
+    border-radius: 5px;
+  }
+  
+select.input-field {
+    flex: 2;
+    appearance: none;
+    padding-right: 30px;
+  }
+  
+  textarea.input-field {
+    resize: none;
+    width: 100%;
+    height: 140px;
+    padding: 20px;
+    border: 2px solid #ff9933;
+    border-radius: 5px;
+    line-height: 1.5;
+  }
+  
+.form-left .btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ff9933;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ff9933;
+  }
+  
+  .form-left .btn:hover {
+    background-color: #ff9933;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Form Right Styles */
+  
+.contact-label {
+    margin-bottom: 5px;
+  }
+  
+.contact-number {
+    color: #ff9933;
+    text-decoration: none;
+  }
+  
+.separator {
+    margin: 20px auto;
+    border-top: 1px solid #ccc;
+  }
+  
+.address {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+/* =================================== Footer Style ============================================= */
+
+footer{
+    background-color: #cccccc22;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Kenia', cursive;
+}
+
+.footer-container {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+    padding: 6px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social-icons a i{
+    font-size: 2em;
+    color: #ff9933;
+    opacity: 0.9;
+}
+
+
+.social-icons a:hover i{
+    color: #000000;
+    transition: 0.5s;
+}
+
+
+.footer-bottom{
+    background:#ff9933;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-bottom p, a{
+    color: #fff;
+    font-weight: 700;
+    padding-top: 10px
+}
+
+.footer-bottom .designer-name{
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+  
+
+  
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+
+/* ======================== Scroll Bar Style ============================ */
+::-webkit-scrollbar{
+    background: #e8f2ff;
+    width: 1rem;   
+}
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ff9933;
+    border-radius: 0rem;
+    border: 0.2rem solid #fff;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #fff;
+    border-radius: 0rem;
+    border: 0.3rem solid #ff9933;
+    background-clip: content-box;
+}
